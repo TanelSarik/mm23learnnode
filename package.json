@@ -3,20 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    
     "url": "git+https://github.com/TanelSarik/mm23learnnode.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  
   "bugs": {
     "url": "https://github.com/TanelSarik/mm23learnnode/issues"
   },
-  "homepage": "https://github.com/TanelSarik/mm23learnnode#readme"
+  "homepage": "https://github.com/TanelSarik/mm23learnnode#readme",
+  "dependencies": {
+    "boxen": "^8.0.1"
+  }
 }
