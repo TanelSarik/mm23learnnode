@@ -1,2 +1,2 @@
-const common = require('./module.js');
-common.hello();
+import boxen from 'boxen';
+console.log (boxen('unicorn', {padding:1}));
