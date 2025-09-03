@@ -19,11 +19,17 @@
   },
   "homepage": "https://github.com/TanelSarik/mm23learnnode#readme",
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
     "boxen": "^8.0.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.4",
+    "postcss-loader": "^8.2.0",
+    "sass": "^1.92.0",
+    "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
     "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1",
