@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const loader = require('sass-loader');
 
 module.exports = {
     entry: './src/index.js',
@@ -58,13 +59,22 @@ module.exports = {
                 }
               }
             ]
-          }
-          ],
+          },
+          {   test:/\.njk$/,
+              use: [
+                {
+                  loader: 'simple-nunjucks-loader',
+                  options: {}
+                },
+              ],
+            },         
+            ],
+
         },
       
     plugins: [ 
         new HtmlWebpackPlugin({
-           template: './src/index.html'
-        })
+           template: './src/index.njk',
+        }),
     ],
 } ;  
