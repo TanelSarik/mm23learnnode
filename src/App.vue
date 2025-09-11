@@ -19,7 +19,7 @@ const showNotif = ref(true)
       </Notification>
 
       <button class="button is-link" @click="showNotif = true">
-        Näita teavitust uuesti
+        Notification example
       </button>
     </div>
   </section>
