@@ -1,3 +1,4 @@
+
 import './style.scss';
 import { createApp } from 'vue';
 import App from './App.vue';
@@ -8,11 +9,15 @@ import ToDo from './pages/ToDo.vue';
 import Modal from './pages/Modal.vue';
 import Buttons from './pages/Buttons.vue';
 import NotificationExample from './pages/NotificationExample.vue'
+import chuckNorris from './pages/chuckNorris.vue';
+import RickAndMorty from './pages/RickAndMorty.vue';
 const routes = [
     { path: '/', component: ToDo, name: 'ToDo' },
     { path: '/Modal', component: Modal, name: 'Modals' },
     { path: '/Buttons', component: Buttons, name: 'Buttons' },
     { path: '/NotificationExample', component: NotificationExample, name: 'Notificatons' }, 
+    { path: '/chuck', component: chuckNorris, name: 'Chuck Norris' }, 
+    { path: '/rickandmorty', component: RickAndMorty, name: 'Rick and Morty' }, 
 ]
 const router = createRouter ({
     history: createWebHashHistory(),

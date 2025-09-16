@@ -1,1 +1,5 @@
-@use "bulma/sass"
+@use "bulma/sass";
+
+.is-fullheight {
+    min-height: 100%;
+}

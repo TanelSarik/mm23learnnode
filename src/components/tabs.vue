@@ -1,5 +1,5 @@
 <script setup>
-import {useRoute, UseRouter} from 'vue-router';
+import {useRoute, useRouter} from 'vue-router';
 const route = useRoute();
 const router =useRouter();
 console.log(route, router.getRoutes());
@@ -11,7 +11,7 @@ console.log(route, router.getRoutes());
         <!-- <li v-for="route in $router.getRoutes()" :class="{'is-active': route.path == $route.path}">
             <RouterLink :to="route.path">{{ route.name }}</RouterLink>
         </li> -->
-        <RouterLink  :to="routh.path" v-for="route in $router.getRoutes()" custom v-slot="{isActive, href, navigate}">
+        <RouterLink  :to="route.path" v-for="route in $router.getRoutes()" custom v-slot="{isActive, href, navigate}">
             <li :class="{'is-active': isActive}">
                 <a :href="href" @click="navigate"> {{ route.name }}</a>
             </li>
