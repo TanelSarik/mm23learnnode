@@ -11,6 +11,8 @@ import Buttons from './pages/Buttons.vue';
 import NotificationExample from './pages/NotificationExample.vue'
 import chuckNorris from './pages/chuckNorris.vue';
 import RickAndMorty from './pages/RickAndMorty.vue';
+import Maps from './pages/maps.vue';
+
 const routes = [
     { path: '/', component: ToDo, name: 'ToDo' },
     { path: '/Modal', component: Modal, name: 'Modals' },
@@ -18,6 +20,7 @@ const routes = [
     { path: '/NotificationExample', component: NotificationExample, name: 'Notificatons' }, 
     { path: '/chuck', component: chuckNorris, name: 'Chuck Norris' }, 
     { path: '/rickandmorty', component: RickAndMorty, name: 'Rick and Morty' }, 
+    { path: '/maps', component: Maps, name: 'maps' }, 
 ]
 const router = createRouter ({
     history: createWebHashHistory(),

@@ -47,7 +47,5 @@ defineProps(['character']);
 .card {
     min-height: 100%;
 }
-div {
-    
-}
+
 </style>
