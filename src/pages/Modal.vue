@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import Modal from "./components/Modal.vue";
+import Modal from "../components/Modal.vue";
 let modalActive = ref(false);
 let modal2Active = ref(false);
 let modal3Active = ref(false);
